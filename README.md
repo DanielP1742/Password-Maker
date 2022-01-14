@@ -16,4 +16,8 @@ Telah Aliyev my coding tutor supplied with the U of M coding bootcamp
 
 - There is one known bug with this app and that the array can not repeat characters that it displays.  Thus if you would like a password 11 characters long of solely numeric characters it will only display 10 characters because the array only lists 0-9.  I thought that a very elegant solution to this could be that I simpley copy and paste the content of the array to be atleast 129 characters long.  I decided against it because I know that would be a very poor practice coding wise.  
 
-![Image-of-Main-Page](./develop/Screen-Shot.png)
+# Link to App:
+<a href="https://danielp1742.github.io/Password-Maker/">Git Page</a>
+
+# Screen Shot of App:
+![Image-of-Main-Page](./assests/images/Screen-Shot.png)
