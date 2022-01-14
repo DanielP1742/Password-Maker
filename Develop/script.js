@@ -1,6 +1,5 @@
-// Assignment code here
 
-
+//Function begins here:
 
 function generatePassword() {
   var passwordLength = parseInt(window.prompt("How many characters would you like? Choose between 8-129"));
@@ -21,7 +20,7 @@ function generatePassword() {
     condition = passwordLength >= 8 && passwordLength <= 129;
   }
 
-  // makePassword();
+  // Password Prompts:
 
   var lowerCaseConfirm = window.confirm("Password include lowercase characters?");
   if (lowerCaseConfirm === true) {
@@ -57,15 +56,8 @@ function generatePassword() {
   } else {
     console.log("Special Case Not Selected")
   }
-
-  // function casedivider() {
-  //   var arraySectionLength = (passwordLength/lengthDivider) 
-
-  //   console.log(arraySectionLength)
-  // }
-
   
-// casedivider();
+// Password Array Creator:
 
     var passwordCharactersArray = [];
 
@@ -91,9 +83,10 @@ function generatePassword() {
 
     var specialCaseArray = ["!", "@", "#", "$", "%", "^", "&", "*", "/", "+", "?", ":", ";", "-"]
 
-    passwordCharactersArray = passwordCharactersArray.concat(specialCaseArray);
-    if (specialCaseConfirm) {
+    if (specialCaseConfirm) {passwordCharactersArray = passwordCharactersArray.concat(specialCaseArray);
     }
+
+    //Password Generator:
 
     // Borrowed array shuffling function from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     function shuffle(array) {
@@ -116,6 +109,7 @@ function generatePassword() {
       return array;
     }
 
+      //Password Printer:
 
     passwordCharactersArray = shuffle(passwordCharactersArray);
 
